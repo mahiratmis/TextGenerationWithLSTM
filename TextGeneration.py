@@ -12,7 +12,7 @@ fileName = "wonderland.txt"
 rawText = open(fileName).read()
 rawText = rawText.lower()
 
-# get sorted list of uniquely used words
-words = sorted(list(set(rawText)))
+# get sorted list of uniquely used characters
+chars = sorted(list(set(rawText)))
 # create mapping of chars to integers
 charToInt = dict((c, i) for i, c in enumerate(chars))
